@@ -1,0 +1,33 @@
+version: "3.0"
+
+stories:
+
+- story: get tournament list
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_for_tournaments
+  - action: action_show_tournaments
+  - action: utter_here_is_tournaments_list
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: register to tournament
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: register
+  - action: action_register_player
+  - action: utter_registration_result
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: remove from tournament
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: remove
+  - action: action_remove_player
+  - action: utter_remove_result
+  - intent: acknowledge
+  - action: utter_goodbye

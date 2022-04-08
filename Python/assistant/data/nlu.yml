@@ -1,0 +1,78 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_for_tournaments
+  examples: |
+    - are there any tournaments?
+    - I am looking for tournament
+    - what game tournaments do you host?
+    - show me tournament list
+    
+- intent: acknowledge
+  examples: |
+    - ok
+    - k
+    - I understand
+    - got it
+    - all right
+
+- intent: register
+  examples: |
+    - I want to play in [League of Legends](League of Legends) tournament.
+    - Please register me in [Lol](League of Legends) tournament.
+    - Can you add me to [League](League of Legends) tournament?
+    - I want to play in [Counter Strike](Counter Strike) tournament.
+    - Please register me in [CS](Counter Strike) tournament.
+    - Can you add me to [Counter](Counter Strike) tournament?
+    - I want to play in [Pokemon](Pokemon) tournament.
+    - Please register me in [Poke](Pokemon) tournament.
+    - Can you add me to [Poketto](Pokemon) tournament?
+    
+- intent: remove
+  examples: |
+    - Can you please remove me from [League of Legends](League of Legends) tournament?
+    - Delete my name from [Lol](League of Legends) tournament.
+    - I don't want to participate in [League](League of Legends) tournament anymore.
+    - Can you please remove me from [Counter Strike](Counter Strike) tournament?
+    - Delete my name from [CS](Counter Strike) tournament.
+    - I don't want to participate in [Counter](Counter Strike) tournament anymore.
+    - Can you please remove me from [Pokemon](Pokemon) tournament?
+    - Delete my name from [Poke](Pokemon) tournament.
+    - I don't want to participate in [Poketto](Pokemon) tournament anymore.
+

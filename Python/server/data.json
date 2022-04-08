@@ -1,0 +1,21 @@
+{
+    "tournaments": [
+        {
+            "name": "League of Legends tournament",
+            "participants": [],
+            "description": "1 vs 1 League of Legends tournament. See you on the rift."
+        },
+        {
+            "name": "Counter Strike tournament",
+            "participants": [
+                "Someone"
+            ],
+            "description": "1 vs 1 Counter Strike tournament. We play on Dust 2 this time."
+        },
+        {
+            "name": "Pokemon tournament",
+            "participants": [],
+            "description": "Classic Pokemon tournament. Legends and Pikachu banned."
+        }
+    ]
+}

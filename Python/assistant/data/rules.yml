@@ -1,0 +1,28 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+#- rule: Show tournaments
+#  steps:
+#  - intent: ask_for_tournaments
+#  - action: action_show_tournaments
+#
+#- rule: Register player
+#  steps:
+#  - intent: register
+#  - action: action_register_player
+#
+#- rule: Remove player
+#  steps:
+#  - intent: remove
+#  - action: action_remove_player

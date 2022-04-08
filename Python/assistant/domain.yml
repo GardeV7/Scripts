@@ -1,0 +1,44 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - ask_for_tournaments
+  - acknowledge
+  - register
+  - remove
+  
+entities:
+  - League of Legends
+  - Counter Strike
+  - Pokemon
+
+actions:
+  - action_show_tournaments
+  - action_register_player
+  - action_remove_player
+
+responses:
+  utter_greet:
+  - text: "Hey!"
+
+  utter_goodbye:
+  - text: "If thats all, bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_here_is_tournaments_list:
+  - text: "Here is tournament list."
+  
+  utter_registration_result:
+  - text: "Trying to register you for tournament..."
+  
+  utter_remove_result:
+  - text: "Trying to remove you from tournament list..."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
